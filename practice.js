@@ -1,11 +1,5 @@
-let todo1 = 99;
+let todo1 = 'Get groceries';
+let todo2 = 'Wash car';
+let todo3 = 'Make dinner';
 
-let month = 'November ';
-let dayOfMonth = "18, ";
-let year = 2022;
-
-let number = 4+5*3;
-let number2 = (4+5)*3;
-
-let age = 28;
-let message = 'I am ' + age + ' years old';
+let element = document.createElement('div');
