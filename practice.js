@@ -14,18 +14,34 @@ document.body.appendChild(button);
 
 document.title = 'ToDoApp';
 
-function greeting(firstName) {
-   console.log('Hello ' + firstName);
+function toUpper(stringArr) {
+    let result = [];
+    stringArr.forEach(function (str) {
+        result.push(str.toUpperCase());
+    });
+    console.log(result);
+}
+toUpper(['hello ', 'world']);
+
+function arrayDouble(stringArr) {
+    let result = [];
+    stringArr.forEach(function (str) {
+        result.push(str);
+        result.push(str);
+    });
+    console.log(result);
 }
 
-function toUpper(str) {
-    console.log(str.toUpperCase());
+arrayDouble(['bark ', 'meow ']);
+
+
+function arraySum(numArray) {
+    let total = 0;
+    numArray.forEach(function (num) {
+        total = total + num;
+    });
+    console.log(total);
 }
 
-function convert(length) {
-    console.log(length * 2.54);
-}
-
-greeting('Łukasz');
-toUpper('Łukasz');
-convert(10);
+arraySum([1, 2, 3, 4]);
+arraySum([-5, 8, 0, 4]);
